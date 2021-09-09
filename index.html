@@ -5,46 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
     <title>Meet Landing Page</title>
     <style>
+        :root {
 
+            /*Primary Colors*/
+            --bright-orange: hsl(31, 77%, 52%);
+            --dark-cyan: hsl(184, 100%, 22%);
+            --very-dark-cyan: hsl(179, 100%, 13%);
+
+            /*Neutral Colors*/
+            --transparent-white-p: hsla(0, 0%, 100%, 0.75);
+            --very-light-gray: hsl(0, 0%, 95%); /*Background, headings, buttons*/
+            
+            /*Typography*/
+            font-size: 15px;
+
+            /*
+            font-family: 'Big Shoulders Display', cursive; font-weight 700
+            font-family: 'Lexend Deca', sans-serif; font-weight: 400
+            */
+        }
+
+        html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+        }
+        
     </style>
 </head>
 <body>
     <main>
-        <section>
-            <img src="img/icon-sedans.svg" alt="Sedan Cars Icon">
-            <h2>
+        <section class="product">
+            <img class="product__icon" src="img/icon-sedans.svg" alt="Sedan Cars Icon">
+            <h2 class="product__title">
                 Sedans
             </h2>
-            <p>
+            <p class="product__description">
                 Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
                 or on your next road trip.
             </p>
-            <button type="button">Learn More</button>
+            <button class="product__button" type="button">Learn More</button>
         </section>
-        <section>
-            <img src="img/icon-suvs.svg" alt="SUV Cars Icon">
-            <h2>
+        <section class="product">
+            <img class="product__icon" src="img/icon-suvs.svg" alt="SUV Cars Icon">
+            <h2 class="product__title">
+                SUVs
+            </h2>
+            <p class="product__description">
                 Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
                 and off-road adventures.
+            </p>
+            <button  class="product__button" type="button">Learn More</button>
+        </section>
+        <section class="product">
+            <img class="product__icon"  src="img/icon-luxury.svg" alt="Luxury Cars Icon">
+            <h2 class="product__title">
+                Luxury
             </h2>
-            <p>
+            <p class="product__description">
                 Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
                 rental and arrive in style.
             </p>
-            <button type="button">Learn More</button>
-        </section>
-        <section>
-            <img src="img/icon-luxury.svg" alt="Luxury Cars Icon">
-            <h2>
-
-            </h2>
-            <p>
-
-            </p>
-            <button type="button">Learn More</button>
+            <button  class="product__button" type="button">Learn More</button>
         </section>
     </main>
 </body>
