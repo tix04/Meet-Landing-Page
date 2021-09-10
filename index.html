@@ -44,44 +44,153 @@
         main {
             display: flex;
             flex-direction: column;
+            padding: 5rem 0;
+        }
+
+        @media screen and (min-width: 750px) {
+            main {
+                flex-direction: row;
+                justify-content: center;
+                padding: 25vh 0;
+            }
+        }
+
+        main, .product__button {
+            background: var(--very-light-gray);
+        }
+
+        .product-orange {
+            background: var(--bright-orange);
+            border-radius: 1rem 1rem 0 0;
+        }
+
+        @media screen and (min-width: 750px) {
+            .product-orange {
+                border-radius: 1rem 0 0 1rem;
+            }
+        }
+
+        .product-cyan {
+            background: var(--dark-cyan);
+        }
+
+        .product-DarkCyan {
+            background: var(--very-dark-cyan);
+            border-radius: 0 0 1rem 1rem;
+        }
+
+        @media screen and (min-width: 750px) {
+            .product-DarkCyan {
+                border-radius: 0 1rem 1rem 0;
+            }
+        }
+
+        .product {
+            width: 85%;
+            margin: 0 auto;
+            padding: 2.5rem 0;
+        }
+
+        @media screen and (min-width: 750px) {
+            .product {
+                width: 20%;
+                margin: 0;
+                min-width: 225px;
+            }
+        }
+        .container {
+            width: 55%;
+            margin: 0 auto;
+        }
+
+        @media screen and (min-width: 750px) {
+            .container {
+                width: 55%;
+                min-width: 175px;
+            }
+        }
+        .product__title {
+            color: var(--very-light-gray);
+            font-family: 'Big Shoulders Display', cursive;
+            font-size: 2rem;
+
+        }
+        .product__description {
+            color: hsla(0, 0%, 100%, 0.65);
+            font-family: 'Lexend Deca', sans-serif;
+            font-size: .8rem;
+            line-height: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        @media screen and (min-width: 750px) {
+            .product__description {
+                margin-bottom: 4.5rem;
+            }
+        }
+        
+        .product__button {
+            padding: 1rem;
+            border: none;
+            border-radius: 2rem;
+            width: 8.33rem;
+            font-family: 'Lexend Deca', sans-serif;
+        }
+
+        .product__button-orange {
+            color: var(--bright-orange);
+        }
+
+        .product__button-cyan {
+            color: var(--dark-cyan);
+        }
+
+        .product__button-DarkCyan {
+            color: var(--very-dark-cyan);
         }
         
     </style>
 </head>
 <body>
     <main>
-        <section class="product">
-            <img class="product__icon" src="img/icon-sedans.svg" alt="Sedan Cars Icon">
+        <section class="product product-orange">
+            <div class="container">
+                <img class="product__icon" src="img/icon-sedans.svg" alt="Sedan Cars Icon">
             <h2 class="product__title">
-                Sedans
+                SEDANS
             </h2>
             <p class="product__description">
                 Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
                 or on your next road trip.
             </p>
-            <button class="product__button" type="button">Learn More</button>
+            <button class="product__button product__button-orange" type="button">Learn More</button>
+            </div>
         </section>
-        <section class="product">
-            <img class="product__icon" src="img/icon-suvs.svg" alt="SUV Cars Icon">
-            <h2 class="product__title">
-                SUVs
-            </h2>
-            <p class="product__description">
-                Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
-                and off-road adventures.
-            </p>
-            <button  class="product__button" type="button">Learn More</button>
+        <section class="product product-cyan">
+            <div class="container">
+                <img class="product__icon" src="img/icon-suvs.svg" alt="SUV Cars Icon">
+                <h2 class="product__title">
+                    SUVS
+                </h2>
+                <p class="product__description">
+                    Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
+                    and off-road adventures.
+                </p>
+                <button  class="product__button product__button-cyan" type="button">Learn More</button>
+            </div>
         </section>
-        <section class="product">
-            <img class="product__icon"  src="img/icon-luxury.svg" alt="Luxury Cars Icon">
-            <h2 class="product__title">
-                Luxury
-            </h2>
-            <p class="product__description">
-                Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
-                rental and arrive in style.
-            </p>
-            <button  class="product__button" type="button">Learn More</button>
+        <section class="product product-DarkCyan">
+            <div class="container">
+                <img class="product__icon"  src="img/icon-luxury.svg" alt="Luxury Cars Icon">
+                <h2 class="product__title">
+                    LUXURY
+                </h2>
+                <p class="product__description">
+                    Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+                    rental and arrive in style.
+                </p>
+                <button  class="product__button product__button-DarkCyan" type="button">Learn More</button>
+            </div>
         </section>
     </main>
 </body>
