@@ -89,8 +89,8 @@ main, .product__button {
 
 @media screen and (min-width: 750px) {
     .container {
-        width: 55%;
-        min-width: 175px;
+        width:70%;
+        min-width: 185px;
     }
 }
 .product__title {
@@ -119,6 +119,7 @@ main, .product__button {
     border-radius: 2rem;
     width: 8.33rem;
     font-family: 'Lexend Deca', sans-serif;
+    font-siz
 }
 
 .product__button:hover {
