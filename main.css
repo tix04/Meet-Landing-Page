@@ -115,20 +115,37 @@ main, .product__button {
 
 .product__button {
     padding: 1rem;
-    border: none;
+    border: 2px solid var(--very-light-gray);
     border-radius: 2rem;
     width: 8.33rem;
     font-family: 'Lexend Deca', sans-serif;
+}
+
+.product__button:hover {
+    color: var(--very-light-gray);
+    background: transparent;
+    border: 2px solid var(--very-light-gray);
 }
 
 .product__button-orange {
     color: var(--bright-orange);
 }
 
+.product__button-orange:hover {
+    background: var(--bright-orange);
+}
 .product__button-cyan {
     color: var(--dark-cyan);
 }
 
+.product__button-cyan:hover {
+    background: var(--dark-cyan);
+}
+
 .product__button-DarkCyan {
     color: var(--very-dark-cyan);
+}
+
+.product__button-DarkCyan:hover {
+    background: var(--very-dark-cyan);
 }
